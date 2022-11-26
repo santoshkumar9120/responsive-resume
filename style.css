@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,500;1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 100px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgb(0,0,0,0.1);
+    margin: 50px;
+}
+.container .left_Side{
+    position: relative;
+    background: #003147;
+    padding: 40px;
+}
+.container .right_Side{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+.profileText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(55,255,255,.2);
+}
+.profileText .imgBx{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.imgBx{
+    border-radius: 6px;
+    color: black;
+    background-color: #fff;
+}
+.profileText .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profileText h2{
+    color: #fff;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.profileText h2 span{
+    font-size: .8em;
+}
+.contactInfo{
+    padding: 40px;
+}
+.title{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contactInfo ul{
+    position: relative;
+}
+.contactInfo ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+cursor: pointer;
+}
+.contactInfo ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+.contactInfo ul li span{
+    color: #fff;
+    font-weight: 300;
+}
+.contactInfoEducation li{
+    margin-bottom: 15px;
+}
+.contactInfoEducation h5{
+    color: #03a9f4;
+    font-weight: 500;
+}
+.contactInfoEducation h4{
+    color: #fff;
+    font-weight: 500;
+}
+.contactInfoEducation h4{
+    color: #fff;
+    font-weight: 300;
+}
+ .text{
+    color: #2c7797;
+}
+.contactInfoLanguage .text .percent div{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    height: 6px;
+    background: #24343b;
+    display: block;
+    margin-top: 5px;
+}
+.contactInfoLanguage .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+.about{
+    margin-bottom: 40px;
+}
+.about:last-child{
+    margin-bottom: 0;
+}
+.title2{
+    color: #12597f;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+p{
+    color: #333;
+}
+.about .box{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.about .box .year_Company{
+    min-width: 150px;
+}
+.about .box .year_Company h5{
+    text-transform: uppercase;
+    color: #10374a;
+    font-weight: 600;
+
+}
+.about .box .text h4{
+    text-transform: uppercase;
+    color: #13232b;
+    font-size: 16px;
+}
+.aboutSkills .box{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px ifr;
+    justify-content: center;
+    align-items: center;
+
+}
+.aboutSkills .box h4{
+    text-transform: uppercase;
+    color: #0f1d34;
+    font-weight: 500;
+}
+.aboutSkills .box h4 .percent{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #0d3e52;
+}
+.aboutSkills .box .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: #03a9f4;
+}
+.interest ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+p{
+    font-size:large;
+}
+.interest ul li{
+    list-style: none;
+    color: #333;
+    font-weight:500 ;
+    margin: 10px 0;
+}
+.interest ul li .fa{
+    color: #03a9f4;
+    font-size: 18px;
+}
+@media(max-width:1000px){
+    .container{
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .interest ul{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
